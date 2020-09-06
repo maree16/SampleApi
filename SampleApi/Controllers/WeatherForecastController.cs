@@ -38,11 +38,4 @@ namespace SampleApi.Controllers
        
 
         }
-        [HttpGet]
-        public IEnumerable<Education> Get()
-        {
-            var education = new Education();
-            education.Add(1, 1);
-
-        }
     }

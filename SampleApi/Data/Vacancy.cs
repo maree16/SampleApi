@@ -5,7 +5,14 @@ using System.Threading.Tasks;
 
 namespace SampleApi.Data
 {
-    public class Vacancy
+    public class Vacancy : Organization 
     {
+        public bool isVacanyAvailable { get; set; }
+        public string ExperienceDuration { get; set; }
+        public string JobTitle { get; set; }
+
+        public Vacancy() 
+        { 
+        }
     }
 }

@@ -8,7 +8,7 @@ namespace SampleApi.Data
     // inheritance from Candidate 
     public class Education : Candidate
     {
-        public List<Education>list = new List<Education>();
+        public List<Education>edulist = new List<Education>();
 
         // Creating Fields
 

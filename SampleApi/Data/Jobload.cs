@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace SampleApi.Data
 {
-    public class Jobload
+    public class Jobload : Organization
     {
+        
     }
 }
