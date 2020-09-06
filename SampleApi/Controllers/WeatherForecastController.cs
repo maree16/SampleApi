@@ -31,11 +31,12 @@ namespace SampleApi.Controllers
 
             var candidate = new Candidate();
 
-            candidate.Add("Saira", "Ahmed", 1, "abc@gmail.com"); 
+            candidate.Add("Saira", "Ahmed", 1, "abc@gmail.com");
             candidate.Add("Maria", "Ch", 2, "abc1@gmail.com");
 
             return candidate.list;
-       
+
 
         }
     }
+}
