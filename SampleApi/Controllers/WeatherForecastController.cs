@@ -35,7 +35,14 @@ namespace SampleApi.Controllers
             candidate.Add("Maria", "Ch", 2, "abc1@gmail.com");
 
             return candidate.list;
- 
+       
+
+        }
+        [HttpGet]
+        public IEnumerable<Education> Get()
+        {
+            var education = new Education();
+            education.Add(1, 1);
+
         }
     }
-}

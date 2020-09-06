@@ -13,8 +13,11 @@ namespace SampleApi.Data
         public string LastName { get; set; } 
         public string Email { get; set; }
         public int  CandidateId { get; set; }
+       
+        // for error handling 
         public Candidate()
         { }
+        
         public Candidate(string firstName, string lastName, int candidateId, string email)
         {   
             FirstName = firstName;
