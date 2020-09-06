@@ -22,12 +22,15 @@ namespace SampleApi.Data
             CandidateId = candidateId;
             Email = email; 
         }
+
         public void Add(string firstName, string lastName, int candidateId, string email)
         {
             list.Add(new Candidate(firstName, lastName, candidateId, email));
         
         
         }
+
+
 
         public void DisplayList()
         {
