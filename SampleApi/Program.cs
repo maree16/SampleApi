@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SampleApi.Data;
 
 namespace SampleApi
 {
@@ -13,7 +14,10 @@ namespace SampleApi
     {
         public static void Main(string[] args)
         {
+           
             CreateHostBuilder(args).Build().Run();
+
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
