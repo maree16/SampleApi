@@ -7,7 +7,7 @@ namespace SampleApi.Data
 {
     public class Vacancy : Organization 
     {
-        public bool isVacanyAvailable { get; set; }
+        public bool IsVacanyAvailable { get; set; }
         public string ExperienceDuration { get; set; }
         public string JobTitle { get; set; }
 

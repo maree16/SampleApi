@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SampleApi.Data
 {
-    abstract class Organization
+    public class Organization
     {
         // creating field 
         public string OrganizationName { get; set; }
