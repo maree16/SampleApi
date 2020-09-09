@@ -10,6 +10,19 @@ namespace SampleApi.Data
         // creating field 
         public string OrganizationName { get; set; }
         public int OrganizationId { get; set; }
+
+        public Organization()
+        { }
+
+        public Organization(string organizationName, int organizationId)
+        {
+            OrganizationName = organizationName;
+            OrganizationId = organizationId;
+        }
+
+
+
+
     }
 
 }
