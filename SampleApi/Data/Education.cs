@@ -8,8 +8,8 @@ namespace SampleApi.Data
     // inheritance from Candidate 
     public class Education : Candidate
     {
-        public List<Education>edulist = new List<Education>();
-
+        
+        
         // Creating Fields
 
         public int EducationId { get; set; }
@@ -29,12 +29,10 @@ namespace SampleApi.Data
         }
 
 
-        public void Add(int educationId, int candidateId)
-        {
-            list.Add(new Education(educationId, candidateId));
 
 
-        }
+
+
 
 
     }
