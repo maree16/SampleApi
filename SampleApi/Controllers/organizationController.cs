@@ -26,7 +26,7 @@ namespace SampleApi.Controllers
         [HttpGet("{id}")]
         public Organization Get(int id)
         {
-            return list.Where(Record => Record.OrganizationId == id ).FirstOrDefault(); ;
+            return list.Where(Record => Record.OrganizationId == id ).FirstOrDefault(); 
         }
 
         // POST api/<organizationController>

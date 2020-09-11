@@ -24,6 +24,10 @@ namespace SampleApi.Data
             Email = email; 
         }
 
-
+       
+        
+        
+        
+     
     }
 }

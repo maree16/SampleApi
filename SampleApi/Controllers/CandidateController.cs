@@ -16,19 +16,18 @@ namespace SampleApi.Controllers
         // in absence of any server or database 
         // creating a private list (by default function)
 
-
+       
         private static List<Candidate> list = new List<Candidate>();
-        
+
         // to get list values
 
         // creating some pre- added values 
-
-
+    
         // GET: api/<CandidateController>
         [HttpGet]
         public IEnumerable<Candidate> Get()
         {
-
+            
             // ON GET ACTION SENDING BACK THE STORED LIST 
 
             return list;
