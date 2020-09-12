@@ -14,7 +14,6 @@ namespace SampleApi.Data
 
         public int EducationId { get; set; }
         public int UserId { get; set; }
-
         // UserId will take CandidateId
         // for 
         public Education()

@@ -30,20 +30,27 @@ namespace SampleApi.Controllers
 
         // POST api/<ContactController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Contact contact)
         {
+            list.Add(contact);
         }
 
         // PUT api/<ContactController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] Contact contact )
         {
+            var contactById = list.Where(Record => Record.ContactId == id).FirstOrDefault();
+            contactById.ContactId = contact.ContactId;
+            contactById.OrganizationPhoneNumber = contact.OrganizationPhoneNumber;
+            contactById.OrganizationEmail =contact.OrganizationEmail;
         }
 
         // DELETE api/<ContactController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            var contactById = list.Where(Record => Record.ContactId == id).FirstOrDefault();
+            list.Remove(contactById);
         }
     }
 }
