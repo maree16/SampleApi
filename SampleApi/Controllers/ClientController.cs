@@ -44,7 +44,6 @@ namespace SampleApi.Controllers
             var clientbyId = list.Where(Record => Record.ClientId == id).FirstOrDefault();
             clientbyId.ClientName = client.ClientName;
             clientbyId.ClientLocation = client.ClientLocation;
-
         }
 
         // DELETE api/<ClientController>/5
